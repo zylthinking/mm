@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ToggleButton
+        android:id="@+id/m1"
+        android:textOff="媒体1"
+        android:textOn="媒体1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textureView"/>
+
+    <ToggleButton
+        android:id="@+id/sz"
+        android:textOff="宽高"
+        android:textOn="宽高"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/m1"
+        android:layout_toRightOf="@+id/m1"/>
+
+    <Button
+        android:id="@+id/sk"
+        android:text="seek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/m1"
+        android:layout_toRightOf="@+id/sz"/>
+
+    <ToggleButton
+        android:id="@+id/m2"
+        android:textOff="媒体2"
+        android:textOn="媒体2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/m1"
+        android:layout_toRightOf="@+id/sk"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="unkown"
+        android:layout_below="@+id/m1"/>
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextureView
+            android:layout_width="wrap_content"
+            android:layout_height="279dp"
+            android:id="@+id/textureView"
+            android:layout_gravity="center"/>
+        <TextureView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/textureView2"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conn"
+            android:checked="false"
+            android:textOff="网络"
+            android:textOn="网络"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频"
+            android:id="@+id/vid"
+            android:checked="false"
+            android:textOff="视频"
+            android:textOn="视频"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="硬编"
+            android:id="@+id/hd"
+            android:checked="true"
+            android:textOff="硬编"
+            android:textOn="硬编"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hd2"
+            android:checked="true"
+            android:textOff="硬解"
+            android:textOn="硬解"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后置"
+            android:id="@+id/back"
+            android:checked="false"
+            android:textOff="后置"
+            android:textOn="后置"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大小"
+            android:id="@+id/sz"
+            android:checked="false"
+            android:textOff="大小"
+            android:textOn="大小"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aud"
+            android:checked="false"
+            android:textOff="音频"
+            android:textOn="音频"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="捕获"
+            android:id="@+id/cap"
+            android:checked="false"
+            android:textOff="捕获"
+            android:textOn="捕获"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rc"
+            android:checked="false"
+            android:textOff="录像"
+            android:textOn="录像"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test"
+            android:checked="false"
+            android:textOff="测试"
+            android:textOn="测试"/>
+
+        <Button
+            android:id="@+id/aec"
+            android:text="mb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/route"
+            android:text="听筒"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/snap"
+            android:text="截图"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<TextView
+    android:id="@+id/addr"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="地址： "
+    />
+<EditText
+    android:id="@+id/ip"
+    android:text="211.151.194.44"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    />
+<TextView
+    android:id="@+id/addr2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=" 端口： "
+    />
+<EditText
+    android:id="@+id/port"
+    android:text="80"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    />
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<TextView
+    android:id="@+id/channel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="频道： "
+    />
+<EditText
+    android:id="@+id/sid"
+    android:text="100000279"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    />
+<TextView
+    android:id="@+id/dtext"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text=" 延迟： "
+    />
+<EditText
+    android:id="@+id/delay"
+    android:text="600"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="unkown"
+        />
+
+</LinearLayout>
